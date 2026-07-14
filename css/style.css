@@ -1,63 +1,110 @@
 /* =====================================
    THE NUMBER LANGUAGE
-   Global Cosmic Foundation
+   GLOBAL COSMIC FOUNDATION v2
 ===================================== */
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+
+    --void:#050505;
+
+    --gold:#d4af37;
+
+    --gold-light:#ffe9a8;
+
+    --text:#f5e6b8;
+
+    --muted:#b8b8b8;
+
+    --glass:
+    rgba(255,255,255,.05);
+
+    --border:
+    rgba(212,175,55,.3);
+
 }
+
+
+
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
 
 
 html {
-    scroll-behavior: smooth;
+
+    scroll-behavior:smooth;
+
 }
+
+
+
 
 
 body {
 
-    background: #050505;
 
-    color: #f5e6b8;
+    background:var(--void);
+
+
+    color:var(--text);
+
 
     font-family:
-    "Segoe UI",
-    Arial,
-    sans-serif;
 
-    overflow-x: hidden;
+    "Cinzel",
+
+    "Segoe UI",
+
+    serif;
+
+
+    overflow-x:hidden;
+
+
+    text-rendering:optimizeLegibility;
+
 
 }
 
 
 
 
-
-/* Links */
 
 a {
 
-    text-decoration: none;
+    text-decoration:none;
 
-    color: inherit;
+    color:inherit;
 
 }
 
 
 
 
-
-/* Main Sections */
 
 section {
 
-    min-height: 100vh;
 
-    padding: 100px 8%;
+    min-height:100vh;
 
-    position: relative;
+
+    padding:120px 8%;
+
+
+    position:relative;
+
 
 }
 
@@ -65,125 +112,144 @@ section {
 
 
 
-/* Loader */
-
-.loader {
-
-    position: fixed;
-
-    inset: 0;
-
-    background:
-    radial-gradient(
-        circle,
-        #211600,
-        #000
-    );
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: center;
-
-    z-index: 9999;
-
-}
-
-
-.loader-symbol {
-
-    font-size: 80px;
-
-    color: #d4af37;
-
-}
 
 
 
-
-
-/* Navigation */
+/* =========================
+   NAVIGATION
+========================= */
 
 
 .navbar {
 
-    position: fixed;
 
-    top: 0;
+    position:fixed;
 
-    width: 100%;
 
-    padding: 25px 8%;
+    top:0;
 
-    display: flex;
 
-    justify-content: space-between;
+    width:100%;
 
-    align-items: center;
 
-    z-index: 1000;
+    padding:25px 8%;
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    z-index:1000;
+
+
 
     background:
 
-    rgba(0,0,0,0.35);
+    rgba(0,0,0,.35);
+
+
 
     backdrop-filter:
 
-    blur(15px);
+    blur(20px);
+
+
+
+    border-bottom:
+
+    1px solid rgba(212,175,55,.15);
+
 
 }
+
+
 
 
 
 .logo {
 
-    font-size: 22px;
 
-    letter-spacing: 4px;
+    font-size:24px;
 
-    color: #d4af37;
+
+    letter-spacing:5px;
+
+
+    color:var(--gold);
+
 
 }
+
+
 
 
 
 .logo span {
 
-    display: block;
 
-    font-size: 14px;
+    display:block;
 
-    color: #fff;
+
+    font-size:13px;
+
+
+    letter-spacing:4px;
+
+
+    color:white;
+
 
 }
+
+
+
+
 
 
 
 .navbar nav {
 
-    display: flex;
 
-    gap: 30px;
+    display:flex;
+
+
+    gap:35px;
+
 
 }
+
+
 
 
 
 .navbar a {
 
-    color: #ddd;
 
-    transition: .3s;
+    color:#ddd;
+
+
+    transition:.4s;
+
+
+    position:relative;
+
 
 }
+
+
+
 
 
 .navbar a:hover {
 
-    color: #d4af37;
+
+    color:var(--gold);
+
 
 }
 
@@ -191,228 +257,31 @@ section {
 
 
 
-/* Hero */
+
+
+
+
+/* =========================
+   HERO SYSTEM
+========================= */
 
 
 .hero {
 
-    display: flex;
 
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
-    background:
-
-    radial-gradient(
-    circle at center,
-    #302000,
-    #000 60%
-    );
-
-}
+    display:flex;
 
 
-
-.hero h1 {
-
-    font-size: clamp(50px,8vw,110px);
-
-    letter-spacing: 12px;
-
-    color:white;
-
-}
+    justify-content:center;
 
 
+    align-items:center;
 
-.hero h1 span {
-
-    color:#d4af37;
-
-}
-
-
-
-.hero p {
-
-    margin-top:40px;
-
-    font-size:20px;
-
-    line-height:1.8;
-
-    color:#ccc;
-
-}
-
-
-
-.primary-btn {
-
-    margin-top:50px;
-
-    padding:18px 45px;
-
-    border-radius:50px;
-
-    border:1px solid #d4af37;
-
-    background:transparent;
-
-    color:#d4af37;
-
-    cursor:pointer;
-
-}
-
-
-
-
-
-/* Number Cards */
-
-
-.number-grid {
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(4,1fr);
-
-    gap:30px;
-
-    margin-top:60px;
-
-}
-
-
-
-.number-card {
-
-    padding:40px;
-
-    background:
-
-    rgba(255,255,255,.05);
-
-    border:
-
-    1px solid rgba(212,175,55,.3);
-
-    border-radius:20px;
 
     text-align:center;
 
-}
-
-
-
-.number-card h3 {
-
-    font-size:70px;
-
-    color:#d4af37;
-
-}
-
-
-
-.number-card h4 {
-
-    margin:20px 0;
-
-    font-size:24px;
-
-}
-
-
-
-
-
-
-/* Geometry */
-
-
-.geometry-placeholder {
-
-    margin-top:50px;
-
-    font-size:80px;
-
-    color:#d4af37;
-
-    text-align:center;
-
-}
-
-
-
-
-
-/* Footer */
-
-
-footer {
-
-    padding:50px;
-
-    text-align:center;
-
-    background:#000;
-
-    color:#888;
-
-}
-/* =====================================
-   COSMIC HERO SYSTEM
-===================================== */
-
-
-.hero {
 
     overflow:hidden;
-
-    position:relative;
-
-}
-
-
-
-
-.cosmic-background {
-
-
-    position:absolute;
-
-    inset:0;
-
-
-    background:
-
-    radial-gradient(
-        circle at center,
-        rgba(212,175,55,.15),
-        transparent 40%
-    ),
-
-    radial-gradient(
-        circle at 30% 20%,
-        rgba(80,50,150,.25),
-        transparent 35%
-    ),
-
-    linear-gradient(
-        180deg,
-        #050505,
-        #000
-    );
-
-
-    z-index:0;
 
 
 }
@@ -426,6 +295,7 @@ footer {
 
     position:relative;
 
+
     z-index:5;
 
 
@@ -435,16 +305,117 @@ footer {
 
 
 
-.sacred-circle {
+.hero h1 {
 
 
-    z-index:2;
+    font-size:
+
+    clamp(55px,8vw,120px);
 
 
-    opacity:.7;
+
+    letter-spacing:15px;
+
+
+    color:white;
 
 
 }
+
+
+
+
+
+.hero h1 span {
+
+
+    color:var(--gold);
+
+
+}
+
+
+
+
+
+.hero p {
+
+
+    margin-top:40px;
+
+
+    font-size:21px;
+
+
+    line-height:2;
+
+
+    color:var(--muted);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   COSMIC BACKGROUND
+========================= */
+
+
+.cosmic-background {
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    background:
+
+
+    radial-gradient(
+
+    circle at center,
+
+    rgba(212,175,55,.18),
+
+    transparent 40%
+
+    ),
+
+
+    radial-gradient(
+
+    circle at 30% 20%,
+
+    rgba(80,50,150,.25),
+
+    transparent 35%
+
+    ),
+
+
+    linear-gradient(
+
+    180deg,
+
+    #050505,
+
+    #000
+
+    );
+
+
+}
+
+
 
 
 
@@ -455,10 +426,8 @@ footer {
 
     position:absolute;
 
+
     inset:0;
-
-
-    z-index:3;
 
 
     pointer-events:none;
@@ -470,14 +439,90 @@ footer {
 
 
 
-.hero h1,
-.hero p,
-.hero button {
 
 
-    position:relative;
 
-    z-index:6;
+/* =========================
+   LOADER
+========================= */
+
+
+.loader {
+
+
+    position:fixed;
+
+
+    inset:0;
+
+
+    background:
+
+
+    radial-gradient(
+
+    circle,
+
+    #211600,
+
+    #000
+
+    );
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    z-index:9999;
+
+
+}
+
+
+
+
+.loader-symbol {
+
+
+    font-size:90px;
+
+
+    color:var(--gold);
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+footer {
+
+
+    padding:60px;
+
+
+    text-align:center;
+
+
+    background:#000;
+
+
+    color:#888;
 
 
 }
