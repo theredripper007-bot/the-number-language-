@@ -1,10 +1,9 @@
 /* =====================================
    THE NUMBER LANGUAGE
-   Premium Website Components
+   Premium Components v2
 ===================================== */
 
 
-/* Main Container */
 
 .container {
 
@@ -16,7 +15,7 @@
 
 
 
-/* Section Subtitle */
+
 
 .section-subtitle {
 
@@ -28,8 +27,6 @@
 
     color:#bdbdbd;
 
-    font-size:18px;
-
     line-height:1.8;
 
 }
@@ -38,7 +35,9 @@
 
 
 
-/* Premium Button */
+
+/* BUTTON */
+
 
 .primary-btn {
 
@@ -51,7 +50,9 @@
 
     border:1px solid #d4af37;
 
-    font-size:16px;
+    color:#d4af37;
+
+    background:transparent;
 
     letter-spacing:2px;
 
@@ -61,10 +62,12 @@
 
 
 
-
-
 .primary-btn:hover {
 
+
+    background:#d4af37;
+
+    color:#000;
 
     transform:translateY(-5px);
 
@@ -74,100 +77,43 @@
 
 
 
-/* Glass Card System */
-
-
-.glass-card {
-
-
-    background:
-
-    rgba(255,255,255,0.05);
-
-
-    backdrop-filter:
-
-    blur(20px);
-
-
-    border:
-
-    1px solid
-
-    rgba(212,175,55,.25);
-
-
-    border-radius:25px;
-
-
-    padding:40px;
-
-
-    transition:.5s;
-
-
-}
 
 
 
-
-.glass-card:hover {
-
-
-    transform:
-
-    translateY(-10px);
-
-
-}
-
-
-
-
-
-/* Number Cards Upgrade */
+/* NUMBER CARDS */
 
 
 .number-card {
 
 
-    position:relative;
+    min-height:330px;
 
-    overflow:hidden;
+    display:flex;
 
+    flex-direction:column;
 
-}
+    justify-content:center;
 
+    align-items:center;
 
+    text-align:center;
 
-
-
-.number-card::before {
-
-
-    content:"";
-
-
-    position:absolute;
-
-
-    inset:0;
-
+    cursor:pointer;
 
     background:
 
-    radial-gradient(
-
-    circle,
-
-    rgba(212,175,55,.15),
-
-    transparent 60%
-
-    );
+    rgba(255,255,255,.05);
 
 
-    opacity:0;
+    border:
+
+    1px solid rgba(212,175,55,.25);
+
+
+    border-radius:25px;
+
+
+    backdrop-filter:blur(20px);
 
 
     transition:.5s;
@@ -177,55 +123,17 @@
 
 
 
-.number-card:hover::before {
 
 
-    opacity:1;
+.number-card:hover {
 
 
-}
+    transform:
+
+    translateY(-15px);
 
 
-
-
-
-/* Gallery Cards */
-
-
-.gallery-box {
-
-
-    min-height:300px;
-
-
-    display:flex;
-
-
-    align-items:center;
-
-
-    justify-content:center;
-
-
-    border-radius:30px;
-
-
-    border:
-
-    1px solid
-
-    rgba(212,175,55,.3);
-
-
-    background:
-
-    rgba(255,255,255,.03);
-
-
-    color:#d4af37;
-
-
-    font-size:24px;
+    border-color:#d4af37;
 
 
 }
@@ -234,152 +142,18 @@
 
 
 
-/* Product Preview Cards */
 
 
-.product-card {
+.number-symbol {
 
 
-    padding:35px;
+    font-size:45px;
 
 
-    border-radius:25px;
+    width:90px;
 
 
-    background:
-
-    rgba(255,255,255,.04);
-
-
-    border:
-
-    1px solid
-
-    rgba(212,175,55,.25);
-
-
-}
-
-
-
-
-
-/* Divider */
-
-
-.cosmic-divider {
-
-
-    width:150px;
-
-
-    height:1px;
-
-
-    margin:40px auto;
-
-
-    background:#d4af37;
-
-
-    box-shadow:
-
-    0 0 20px #d4af37;
-
-
-}
-/* =====================================
-   SACRED MANDALA SYSTEM
-===================================== */
-
-
-.sacred-mandala {
-
-
-    width:420px;
-
-    height:420px;
-
-    position:relative;
-
-    margin:80px auto;
-
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-
-}
-
-
-
-
-
-.mandala-ring {
-
-
-    position:absolute;
-
-
-    border-radius:50%;
-
-
-    border:1px solid rgba(212,175,55,.5);
-
-
-}
-
-
-
-
-
-.ring-one {
-
-
-    width:100%;
-
-    height:100%;
-
-
-}
-
-
-
-.ring-two {
-
-
-    width:75%;
-
-    height:75%;
-
-
-}
-
-
-
-.ring-three {
-
-
-    width:50%;
-
-    height:50%;
-
-
-}
-
-
-
-
-
-.mandala-core {
-
-
-    width:100px;
-
-    height:100px;
+    height:90px;
 
 
     border-radius:50%;
@@ -394,59 +168,27 @@
     justify-content:center;
 
 
-    font-size:60px;
+    color:#ffe9a8;
 
 
-    color:#d4af37;
+    border:
+
+    1px solid rgba(212,175,55,.4);
 
 
-    background:
-
-    radial-gradient(
-
-    circle,
-
-    rgba(212,175,55,.25),
-
-    transparent
-
-    );
+    margin-bottom:20px;
 
 
     text-shadow:
 
     0 0 30px #d4af37;
 
-/* =====================================
-   NUMBER UNIVERSE CARDS v2
-===================================== */
-
-
-.number-card {
-
-
-    min-height:320px;
-
-
-    display:flex;
-
-
-    flex-direction:column;
-
-
-    justify-content:center;
-
-
-    align-items:center;
-
-
-    text-align:center;
-
-
-    cursor:pointer;
-
 
 }
+
+
+
+
 
 
 
@@ -455,17 +197,15 @@
 
     font-size:100px;
 
-
-    font-weight:700;
-
-
-    margin-bottom:20px;
+    color:#d4af37;
 
 
-    transition:.5s;
+    margin:10px;
 
 
 }
+
+
 
 
 
@@ -490,137 +230,50 @@
 
     color:#bbb;
 
-
-    line-height:1.7;
-
-
 }
 
 
 
 
 
-.number-card:hover h3 {
 
 
-    transform:
 
-    scale(1.15);
 
+/* SACRED MANDALA */
 
-    color:#ffe9a8;
 
+.sacred-mandala {
 
-}
 
+    width:420px;
 
+    height:420px;
 
 
-/* Number Energy Variations */
+    position:relative;
 
 
-.number-card:nth-child(1) h3 {
-
-    text-shadow:0 0 40px #555;
-
-}
-
-
-
-.number-card:nth-child(2) h3 {
-
-    text-shadow:0 0 40px #d4af37;
-
-}
-
-
-
-.number-card:nth-child(3) h3 {
-
-    text-shadow:0 0 40px #8c8cff;
-
-}
-
-
-
-.number-card:nth-child(4) h3 {
-
-    text-shadow:0 0 40px #ff9d4d;
-
-}
-
-
-
-.number-card:nth-child(5) h3 {
-
-    text-shadow:0 0 40px #4dff88;
-
-}
-
-
-
-.number-card:nth-child(6) h3 {
-
-    text-shadow:0 0 40px #ff66cc;
-
-}
-
-
-
-.number-card:nth-child(7) h3 {
-
-    text-shadow:0 0 40px #66ccff;
-
-}
-
-
-
-.number-card:nth-child(8) h3 {
-
-    text-shadow:0 0 40px #ffffff;
-
-}
-
-
-
-.number-card:nth-child(9) h3 {
-
-    text-shadow:0 0 40px #ffe066;
-
-}
-
-
-
-.number-card:nth-child(10) h3 {
-
-    text-shadow:0 0 40px #d4af37;
-
-}
-}
-/* =====================================
-   NUMBER SYMBOL SYSTEM
-===================================== */
-
-
-.number-symbol {
-
-    font-size:45px;
-
-    color:#ffe9a8;
-
-    margin-bottom:20px;
-
-
-    width:90px;
-
-    height:90px;
+    margin:80px auto;
 
 
     display:flex;
 
-    align-items:center;
 
     justify-content:center;
+
+
+    align-items:center;
+
+
+}
+
+
+
+.mandala-ring {
+
+
+    position:absolute;
 
 
     border-radius:50%;
@@ -628,29 +281,69 @@
 
     border:
 
-    1px solid rgba(212,175,55,.35);
+    1px solid rgba(212,175,55,.5);
+
+
+}
 
 
 
-    background:
+.ring-one {
 
-    radial-gradient(
+width:100%;
 
-    circle,
+height:100%;
 
-    rgba(212,175,55,.18),
+}
 
-    transparent
 
-    );
+.ring-two {
+
+width:75%;
+
+height:75%;
+
+}
+
+
+.ring-three {
+
+width:50%;
+
+height:50%;
+
+}
+
+
+
+.mandala-core {
+
+
+    width:100px;
+
+    height:100px;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    font-size:60px;
+
+
+    color:#d4af37;
 
 
     text-shadow:
 
-    0 0 25px #d4af37;
+    0 0 40px #d4af37;
 
-
-    transition:.5s;
 
 }
 
@@ -658,19 +351,194 @@
 
 
 
-.number-card:hover .number-symbol {
 
 
-    transform:
-
-    rotate(15deg)
-
-    scale(1.15);
 
 
-    box-shadow:
+/* GALLERY */
 
-    0 0 40px rgba(212,175,55,.5);
+
+.gallery-box {
+
+
+    min-height:350px;
+
+
+    border-radius:30px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    border:
+
+    1px solid rgba(212,175,55,.3);
+
+
+    color:#d4af37;
+
+
+    font-size:25px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* NUMBER MODAL */
+
+
+.number-modal {
+
+
+    position:fixed;
+
+
+    inset:0;
+
+
+    background:
+
+    rgba(0,0,0,.85);
+
+
+    backdrop-filter:
+
+    blur(20px);
+
+
+    display:none;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    z-index:5000;
+
+
+}
+
+
+
+
+
+.modal-content {
+
+
+    width:90%;
+
+    max-width:500px;
+
+
+    padding:50px;
+
+
+    text-align:center;
+
+
+    border-radius:30px;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    border:
+
+    1px solid rgba(212,175,55,.4);
+
+
+}
+
+
+
+
+
+.modal-close {
+
+
+    position:absolute;
+
+
+    right:30px;
+
+
+    top:30px;
+
+
+    font-size:35px;
+
+
+    background:none;
+
+
+    color:white;
+
+
+    border:none;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+.modal-symbol {
+
+
+    font-size:70px;
+
+
+    color:#d4af37;
+
+
+}
+
+
+
+
+.modal-number {
+
+
+    font-size:90px;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+.modal-title {
+
+
+    color:#ffe9a8;
+
+
+    font-size:30px;
 
 
 }
