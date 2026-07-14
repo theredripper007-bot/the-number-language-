@@ -417,5 +417,183 @@
 
     0 0 30px #d4af37;
 
+/* =====================================
+   NUMBER UNIVERSE CARDS v2
+===================================== */
 
+
+.number-card {
+
+
+    min-height:320px;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+.number-card h3 {
+
+
+    font-size:100px;
+
+
+    font-weight:700;
+
+
+    margin-bottom:20px;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+
+.number-card h4 {
+
+
+    color:#ffe9a8;
+
+
+    letter-spacing:3px;
+
+
+}
+
+
+
+
+
+.number-card p {
+
+
+    color:#bbb;
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+
+
+.number-card:hover h3 {
+
+
+    transform:
+
+    scale(1.15);
+
+
+    color:#ffe9a8;
+
+
+}
+
+
+
+
+/* Number Energy Variations */
+
+
+.number-card:nth-child(1) h3 {
+
+    text-shadow:0 0 40px #555;
+
+}
+
+
+
+.number-card:nth-child(2) h3 {
+
+    text-shadow:0 0 40px #d4af37;
+
+}
+
+
+
+.number-card:nth-child(3) h3 {
+
+    text-shadow:0 0 40px #8c8cff;
+
+}
+
+
+
+.number-card:nth-child(4) h3 {
+
+    text-shadow:0 0 40px #ff9d4d;
+
+}
+
+
+
+.number-card:nth-child(5) h3 {
+
+    text-shadow:0 0 40px #4dff88;
+
+}
+
+
+
+.number-card:nth-child(6) h3 {
+
+    text-shadow:0 0 40px #ff66cc;
+
+}
+
+
+
+.number-card:nth-child(7) h3 {
+
+    text-shadow:0 0 40px #66ccff;
+
+}
+
+
+
+.number-card:nth-child(8) h3 {
+
+    text-shadow:0 0 40px #ffffff;
+
+}
+
+
+
+.number-card:nth-child(9) h3 {
+
+    text-shadow:0 0 40px #ffe066;
+
+}
+
+
+
+.number-card:nth-child(10) h3 {
+
+    text-shadow:0 0 40px #d4af37;
+
+}
 }
