@@ -288,3 +288,134 @@
 
 
 }
+/* =====================================
+   SACRED MANDALA SYSTEM
+===================================== */
+
+
+.sacred-mandala {
+
+
+    width:420px;
+
+    height:420px;
+
+    position:relative;
+
+    margin:80px auto;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+}
+
+
+
+
+
+.mandala-ring {
+
+
+    position:absolute;
+
+
+    border-radius:50%;
+
+
+    border:1px solid rgba(212,175,55,.5);
+
+
+}
+
+
+
+
+
+.ring-one {
+
+
+    width:100%;
+
+    height:100%;
+
+
+}
+
+
+
+.ring-two {
+
+
+    width:75%;
+
+    height:75%;
+
+
+}
+
+
+
+.ring-three {
+
+
+    width:50%;
+
+    height:50%;
+
+
+}
+
+
+
+
+
+.mandala-core {
+
+
+    width:100px;
+
+    height:100px;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    font-size:60px;
+
+
+    color:#d4af37;
+
+
+    background:
+
+    radial-gradient(
+
+    circle,
+
+    rgba(212,175,55,.25),
+
+    transparent
+
+    );
+
+
+    text-shadow:
+
+    0 0 30px #d4af37;
+
+
+}
