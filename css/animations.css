@@ -574,3 +574,58 @@
 }
 
 }
+/* Sacred Mandala Motion */
+
+
+.mandala-ring {
+
+
+    animation:
+
+    mandalaSpin 40s linear infinite;
+
+
+}
+
+
+
+.ring-two {
+
+
+    animation-direction:reverse;
+
+    animation-duration:30s;
+
+
+}
+
+
+
+.ring-three {
+
+
+    animation-duration:20s;
+
+
+}
+
+
+
+
+@keyframes mandalaSpin {
+
+
+    from {
+
+        transform:rotate(0deg);
+
+    }
+
+
+    to {
+
+        transform:rotate(360deg);
+
+    }
+
+}
