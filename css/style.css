@@ -1,12 +1,18 @@
 /* =====================================
    THE NUMBER LANGUAGE
-   GLOBAL COSMIC FOUNDATION v2
+   GLOBAL COSMIC FOUNDATION v3
 ===================================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Orbitron:wght@400;600;700&display=swap');
+
 
 
 :root {
 
     --void:#050505;
+
+    --deep-space:#000000;
 
     --gold:#d4af37;
 
@@ -16,16 +22,19 @@
 
     --muted:#b8b8b8;
 
-    --glass:
-    rgba(255,255,255,.05);
+    --glass:rgba(255,255,255,0.05);
 
-    --border:
-    rgba(212,175,55,.3);
+    --border:rgba(212,175,55,0.3);
 
 }
 
 
 
+
+
+/* =========================
+   RESET
+========================= */
 
 
 * {
@@ -65,8 +74,6 @@ body {
 
     "Cinzel",
 
-    "Segoe UI",
-
     serif;
 
 
@@ -77,6 +84,8 @@ body {
 
 
 }
+
+
 
 
 
@@ -94,6 +103,13 @@ a {
 
 
 
+
+
+/* =========================
+   GLOBAL SECTIONS
+========================= */
+
+
 section {
 
 
@@ -107,7 +123,6 @@ section {
 
 
 }
-
 
 
 
@@ -150,7 +165,7 @@ section {
 
     background:
 
-    rgba(0,0,0,.35);
+    rgba(0,0,0,.45);
 
 
 
@@ -166,6 +181,7 @@ section {
 
 
 }
+
 
 
 
@@ -233,10 +249,17 @@ section {
     color:#ddd;
 
 
+    font-family:
+
+    "Orbitron",
+
+    sans-serif;
+
+
+    font-size:14px;
+
+
     transition:.4s;
-
-
-    position:relative;
 
 
 }
@@ -260,7 +283,6 @@ section {
 
 
 
-
 /* =========================
    HERO SYSTEM
 ========================= */
@@ -272,10 +294,10 @@ section {
     display:flex;
 
 
-    justify-content:center;
-
-
     align-items:center;
+
+
+    justify-content:center;
 
 
     text-align:center;
@@ -290,16 +312,19 @@ section {
 
 
 
+
 .hero-content {
 
 
     position:relative;
 
 
-    z-index:5;
+    z-index:10;
 
 
 }
+
+
 
 
 
@@ -313,11 +338,13 @@ section {
     clamp(55px,8vw,120px);
 
 
-
     letter-spacing:15px;
 
 
     color:white;
+
+
+    font-weight:700;
 
 
 }
@@ -338,13 +365,18 @@ section {
 
 
 
+
+
 .hero p {
 
 
     margin-top:40px;
 
 
-    font-size:21px;
+    max-width:700px;
+
+
+    font-size:20px;
 
 
     line-height:2;
@@ -354,7 +386,6 @@ section {
 
 
 }
-
 
 
 
@@ -386,7 +417,7 @@ section {
 
     rgba(212,175,55,.18),
 
-    transparent 40%
+    transparent 35%
 
     ),
 
@@ -395,9 +426,9 @@ section {
 
     circle at 30% 20%,
 
-    rgba(80,50,150,.25),
+    rgba(100,50,200,.25),
 
-    transparent 35%
+    transparent 40%
 
     ),
 
@@ -419,8 +450,6 @@ section {
 
 
 
-
-
 .particles {
 
 
@@ -431,6 +460,78 @@ section {
 
 
     pointer-events:none;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   BUTTON FOUNDATION
+========================= */
+
+
+.primary-btn {
+
+
+    margin-top:40px;
+
+
+    padding:18px 45px;
+
+
+    border-radius:50px;
+
+
+    border:
+
+    1px solid var(--gold);
+
+
+
+    background:transparent;
+
+
+    color:var(--gold);
+
+
+    font-family:
+
+    "Orbitron",
+
+    sans-serif;
+
+
+    letter-spacing:2px;
+
+
+    cursor:pointer;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+
+
+.primary-btn:hover {
+
+
+    background:var(--gold);
+
+
+    color:black;
+
+
+    transform:translateY(-5px);
 
 
 }
@@ -487,6 +588,7 @@ section {
 
 
 
+
 .loader-symbol {
 
 
@@ -523,6 +625,22 @@ footer {
 
 
     color:#888;
+
+
+    letter-spacing:2px;
+
+
+}
+
+
+
+
+
+
+footer p {
+
+
+    margin:10px;
 
 
 }
