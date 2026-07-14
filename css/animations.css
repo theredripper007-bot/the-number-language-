@@ -720,3 +720,187 @@
 
 
 }
+/* =====================================
+   SACRED GEOMETRY MOTION
+===================================== */
+
+
+.sacred-circle {
+
+
+    position:absolute;
+
+
+    width:420px;
+
+
+    height:420px;
+
+
+    border-radius:50%;
+
+
+    border:
+
+    1px solid rgba(212,175,55,.4);
+
+
+
+    top:50%;
+
+
+    left:50%;
+
+
+    transform:
+
+    translate(-50%,-50%);
+
+
+
+    animation:
+
+    sacredRotate 40s linear infinite;
+
+
+
+}
+
+
+
+
+.sacred-circle::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:40px;
+
+
+    border-radius:50%;
+
+
+    border:
+
+    1px solid rgba(212,175,55,.3);
+
+
+
+    animation:
+
+    sacredPulse 6s ease-in-out infinite;
+
+
+}
+
+
+
+
+
+.sacred-circle::after {
+
+
+    content:"✦";
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:90px;
+
+
+    color:#d4af37;
+
+
+    text-shadow:
+
+    0 0 40px #d4af37;
+
+
+}
+
+
+
+
+
+@keyframes sacredRotate {
+
+
+from {
+
+
+    transform:
+
+    translate(-50%,-50%)
+
+    rotate(0deg);
+
+
+}
+
+
+
+to {
+
+
+    transform:
+
+    translate(-50%,-50%)
+
+    rotate(360deg);
+
+
+}
+
+
+}
+
+
+
+
+
+@keyframes sacredPulse {
+
+
+0%,100% {
+
+
+    transform:scale(1);
+
+
+    opacity:.4;
+
+
+}
+
+
+
+50% {
+
+
+    transform:scale(1.15);
+
+
+    opacity:1;
+
+
+}
+
+
+}
