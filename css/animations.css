@@ -904,3 +904,124 @@ to {
 
 
 }
+/* =====================================
+   COSMIC PAGE TRANSITIONS
+===================================== */
+
+
+.page-transition {
+
+
+    position:fixed;
+
+
+    inset:0;
+
+
+    background:
+
+
+    radial-gradient(
+
+    circle,
+
+    #211600,
+
+    #000
+
+    );
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    z-index:99999;
+
+
+    opacity:0;
+
+
+    pointer-events:none;
+
+
+    transition:1s;
+
+
+}
+
+
+
+
+
+.transition-symbol {
+
+
+    font-size:90px;
+
+
+    color:#d4af37;
+
+
+    text-shadow:
+
+    0 0 50px #d4af37;
+
+
+    animation:
+
+    transitionPulse 2s infinite;
+
+
+}
+
+
+
+
+
+.page-transition.active {
+
+
+    opacity:1;
+
+
+}
+
+
+
+
+
+@keyframes transitionPulse {
+
+
+0%,100% {
+
+
+transform:scale(1);
+
+
+opacity:.5;
+
+
+}
+
+
+
+50% {
+
+
+transform:scale(1.3);
+
+
+opacity:1;
+
+
+}
+
+
+}
