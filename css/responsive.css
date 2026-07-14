@@ -1,1 +1,240 @@
+/* =====================================
+   THE NUMBER LANGUAGE
+   Responsive System
+===================================== */
 
+
+/* Large Tablets */
+
+@media (max-width: 1024px) {
+
+
+    .navbar {
+
+        padding:20px 5%;
+
+    }
+
+
+    .navbar nav {
+
+        gap:15px;
+
+    }
+
+
+    .number-grid {
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+    }
+
+
+    .sacred-circle {
+
+        width:350px;
+
+        height:350px;
+
+    }
+
+}
+
+
+
+
+
+/* Mobile Devices */
+
+@media (max-width:768px) {
+
+
+
+    section {
+
+        padding:
+
+        80px 5%;
+
+    }
+
+
+
+
+    .navbar {
+
+        flex-direction:
+
+        column;
+
+        gap:20px;
+
+    }
+
+
+
+
+    .navbar nav {
+
+
+        flex-wrap:
+
+        wrap;
+
+
+        justify-content:
+
+        center;
+
+
+    }
+
+
+
+
+
+    .logo {
+
+        text-align:center;
+
+    }
+
+
+
+
+
+    .hero h1 {
+
+        font-size:
+
+        45px;
+
+        letter-spacing:
+
+        5px;
+
+    }
+
+
+
+
+    .hero p {
+
+        font-size:
+
+        16px;
+
+    }
+
+
+
+
+
+    .number-grid {
+
+        grid-template-columns:
+
+        1fr;
+
+    }
+
+
+
+
+
+    .number-card h3 {
+
+        font-size:
+
+        55px;
+
+    }
+
+
+
+
+
+    section h2 {
+
+        font-size:
+
+        32px;
+
+        letter-spacing:
+
+        3px;
+
+    }
+
+
+
+
+    .sacred-circle {
+
+        width:
+
+        250px;
+
+
+        height:
+
+        250px;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+/* Small Phones */
+
+
+@media (max-width:420px) {
+
+
+    .hero h1 {
+
+
+        font-size:
+
+        36px;
+
+
+    }
+
+
+
+
+    .primary-btn {
+
+
+        padding:
+
+        15px 30px;
+
+
+    }
+
+
+
+
+    .navbar a {
+
+
+        font-size:
+
+        14px;
+
+
+    }
+
+
+}
