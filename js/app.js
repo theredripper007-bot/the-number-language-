@@ -2,7 +2,37 @@
    THE NUMBER LANGUAGE
    Main Application Controller
 ===================================== */
+const numberDatabase = {
 
+    1: {
+        title: "The Origin",
+        meaning:
+            "Unity, beginning, creation and infinite potential.",
+        geometry: "Circle"
+    },
+
+    3: {
+        title: "The Trinity",
+        meaning:
+            "Balance between mind, body and spirit.",
+        geometry: "Triangle"
+    },
+
+    7: {
+        title: "The Seeker",
+        meaning:
+            "Wisdom, introspection, knowledge and spiritual awakening.",
+        geometry: "Heptagon"
+    },
+
+    9: {
+        title: "The Completion",
+        meaning:
+            "Fulfillment, enlightenment and universal compassion.",
+        geometry: "Enneagon"
+    }
+
+};
 document.addEventListener("DOMContentLoaded", () => {
 
     console.log("THE NUMBER LANGUAGE initialized");
