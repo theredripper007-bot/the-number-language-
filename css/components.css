@@ -1,46 +1,16 @@
 /* =====================================
    THE NUMBER LANGUAGE
-   Premium Components v2
+   COMPONENT SYSTEM v3
 ===================================== */
 
 
 
-.container {
-
-    max-width:1200px;
-
-    margin:auto;
-
-}
-
-
-
-
-
-.section-subtitle {
-
-    text-align:center;
-
-    max-width:700px;
-
-    margin:20px auto 60px;
-
-    color:#bdbdbd;
-
-    line-height:1.8;
-
-}
-
-
-
-
-
-
-/* BUTTON */
+/* =========================
+   BUTTONS
+========================= */
 
 
 .primary-btn {
-
 
     display:inline-block;
 
@@ -61,9 +31,7 @@
 }
 
 
-
 .primary-btn:hover {
-
 
     background:#d4af37;
 
@@ -78,9 +46,51 @@
 
 
 
+/* =========================
+   SECTION TEXT
+========================= */
 
 
-/* NUMBER CARDS */
+.section-subtitle {
+
+    max-width:700px;
+
+    margin:20px auto 60px;
+
+    text-align:center;
+
+    color:#bbb;
+
+    line-height:2;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   NUMBER UNIVERSE
+========================= */
+
+
+.number-grid {
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+
 
 
 .number-card {
@@ -88,21 +98,29 @@
 
     min-height:330px;
 
+
     display:flex;
+
 
     flex-direction:column;
 
+
     justify-content:center;
+
 
     align-items:center;
 
+
     text-align:center;
+
 
     cursor:pointer;
 
-    background:
 
-    rgba(255,255,255,.05);
+    padding:30px;
+
+
+    border-radius:25px;
 
 
     border:
@@ -110,7 +128,11 @@
     1px solid rgba(212,175,55,.25);
 
 
-    border-radius:25px;
+
+    background:
+
+    rgba(255,255,255,.05);
+
 
 
     backdrop-filter:blur(20px);
@@ -142,12 +164,7 @@
 
 
 
-
-
 .number-symbol {
-
-
-    font-size:45px;
 
 
     width:90px;
@@ -168,6 +185,9 @@
     justify-content:center;
 
 
+    font-size:45px;
+
+
     color:#ffe9a8;
 
 
@@ -184,8 +204,25 @@
     0 0 30px #d4af37;
 
 
+    transition:.5s;
+
+
 }
 
+
+
+
+.number-card:hover .number-symbol {
+
+
+    transform:
+
+    scale(1.15)
+
+    rotate(15deg);
+
+
+}
 
 
 
@@ -197,15 +234,12 @@
 
     font-size:100px;
 
+    margin:10px;
+
     color:#d4af37;
 
 
-    margin:10px;
-
-
 }
-
-
 
 
 
@@ -215,12 +249,10 @@
 
     color:#ffe9a8;
 
-
     letter-spacing:3px;
 
 
 }
-
 
 
 
@@ -230,6 +262,9 @@
 
     color:#bbb;
 
+    line-height:1.7;
+
+
 }
 
 
@@ -240,13 +275,16 @@
 
 
 
-/* SACRED MANDALA */
+/* =========================
+   SACRED MANDALA
+========================= */
 
 
 .sacred-mandala {
 
 
     width:420px;
+
 
     height:420px;
 
@@ -260,13 +298,15 @@
     display:flex;
 
 
-    justify-content:center;
-
-
     align-items:center;
 
 
+    justify-content:center;
+
+
 }
+
+
 
 
 
@@ -288,6 +328,8 @@
 
 
 
+
+
 .ring-one {
 
 width:100%;
@@ -297,6 +339,7 @@ height:100%;
 }
 
 
+
 .ring-two {
 
 width:75%;
@@ -304,6 +347,7 @@ width:75%;
 height:75%;
 
 }
+
 
 
 .ring-three {
@@ -316,10 +360,13 @@ height:50%;
 
 
 
+
+
 .mandala-core {
 
 
     width:100px;
+
 
     height:100px;
 
@@ -329,9 +376,11 @@ height:50%;
 
     display:flex;
 
-    justify-content:center;
 
     align-items:center;
+
+
+    justify-content:center;
 
 
     font-size:60px;
@@ -355,49 +404,9 @@ height:50%;
 
 
 
-/* GALLERY */
-
-
-.gallery-box {
-
-
-    min-height:350px;
-
-
-    border-radius:30px;
-
-
-    display:flex;
-
-
-    justify-content:center;
-
-
-    align-items:center;
-
-
-    border:
-
-    1px solid rgba(212,175,55,.3);
-
-
-    color:#d4af37;
-
-
-    font-size:25px;
-
-
-}
-
-
-
-
-
-
-
-
-
-/* NUMBER MODAL */
+/* =========================
+   NUMBER MODAL
+========================= */
 
 
 .number-modal {
@@ -409,16 +418,6 @@ height:50%;
     inset:0;
 
 
-    background:
-
-    rgba(0,0,0,.85);
-
-
-    backdrop-filter:
-
-    blur(20px);
-
-
     display:none;
 
 
@@ -426,6 +425,14 @@ height:50%;
 
 
     align-items:center;
+
+
+    background:
+
+    rgba(0,0,0,.85);
+
+
+    backdrop-filter:blur(20px);
 
 
     z-index:5000;
@@ -441,6 +448,7 @@ height:50%;
 
 
     width:90%;
+
 
     max-width:500px;
 
@@ -469,17 +477,16 @@ height:50%;
 
 
 
-
 .modal-close {
 
 
     position:absolute;
 
 
-    right:30px;
-
-
     top:30px;
+
+
+    right:30px;
 
 
     font-size:35px;
@@ -488,13 +495,10 @@ height:50%;
     background:none;
 
 
-    color:white;
-
-
     border:none;
 
 
-    cursor:pointer;
+    color:white;
 
 
 }
@@ -507,7 +511,6 @@ height:50%;
 
 
     font-size:70px;
-
 
     color:#d4af37;
 
@@ -522,7 +525,6 @@ height:50%;
 
     font-size:90px;
 
-
     color:white;
 
 
@@ -535,16 +537,24 @@ height:50%;
 .modal-title {
 
 
+    font-size:30px;
+
     color:#ffe9a8;
 
 
-    font-size:30px;
-
-
 }
-/* =====================================
+
+
+
+
+
+
+
+
+
+/* =========================
    PHILOSOPHY WORLD
-===================================== */
+========================= */
 
 
 .world-hero {
@@ -556,29 +566,16 @@ height:50%;
     display:flex;
 
 
-    align-items:center;
-
-
     justify-content:center;
+
+
+    align-items:center;
 
 
     text-align:center;
 
 
     position:relative;
-
-
-    overflow:hidden;
-
-
-}
-
-
-
-.world-hero .hero-content {
-
-
-    z-index:5;
 
 
 }
@@ -611,14 +608,16 @@ height:50%;
     margin:120px auto;
 
 
-    text-align:center;
-
-
     padding:40px;
 
 
-}
+    text-align:center;
 
+
+    position:relative;
+
+
+}
 
 
 
@@ -626,17 +625,13 @@ height:50%;
 .philosophy-section h2 {
 
 
-    font-size:45px;
-
-
     color:#d4af37;
 
 
-    margin-bottom:30px;
+    font-size:45px;
 
 
 }
-
 
 
 
@@ -680,20 +675,231 @@ height:50%;
     text-align:center;
 
 
+    background:
+
+    radial-gradient(
+
+    circle,
+
+    rgba(212,175,55,.12),
+
+    transparent
+
+    );
+
+
 }
+
+
 
 
 
 .quote-section h2 {
 
 
+    color:#ffe9a8;
+
+
     font-size:55px;
+
+
+    font-style:italic;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   GALLERY WORLD
+========================= */
+
+
+.gallery-world {
+
+
+    max-width:1200px;
+
+
+    margin:120px auto;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.collection-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+.collection-card {
+
+
+    padding:40px;
+
+
+    min-height:220px;
+
+
+    border-radius:30px;
+
+
+    background:
+
+    rgba(255,255,255,.04);
+
+
+    border:
+
+    1px solid rgba(212,175,55,.3);
+
+
+    transition:.5s;
+
+
+}
+
+
+
+
+
+.collection-card:hover {
+
+
+    transform:
+
+    translateY(-15px);
+
+
+    border-color:#d4af37;
+
+
+}
+
+
+
+
+
+.collection-card h3 {
 
 
     color:#ffe9a8;
 
 
-    font-style:italic;
+    font-size:28px;
+
+
+}
+
+
+
+
+
+.collection-card p {
+
+
+    color:#bbb;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+.art-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+.art-placeholder {
+
+
+    height:300px;
+
+
+    border-radius:30px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:90px;
+
+
+    color:#d4af37;
+
+
+    border:
+
+    1px solid rgba(212,175,55,.3);
+
+
+    transition:.5s;
+
+
+}
+
+
+
+
+
+.art-placeholder:hover {
+
+
+    transform:
+
+    scale(1.05);
 
 
 }
