@@ -1045,3 +1045,178 @@ height:50%;
 
 
 }
+/* =====================================
+   PRODUCTS WORLD
+===================================== */
+
+
+.products-world {
+
+
+    max-width:1200px;
+
+
+    margin:120px auto;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.product-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+
+    gap:35px;
+
+
+}
+
+
+
+
+
+
+
+.product-card {
+
+
+    padding:40px;
+
+
+    min-height:350px;
+
+
+    border-radius:30px;
+
+
+    border:
+
+    1px solid rgba(212,175,55,.3);
+
+
+    background:
+
+    rgba(255,255,255,.05);
+
+
+    backdrop-filter:blur(20px);
+
+
+    transition:.5s;
+
+
+}
+
+
+
+
+
+.product-card:hover {
+
+
+    transform:
+
+    translateY(-15px);
+
+
+    border-color:#d4af37;
+
+
+    box-shadow:
+
+    0 0 40px rgba(212,175,55,.2);
+
+
+}
+
+
+
+
+
+.product-symbol {
+
+
+    width:100px;
+
+
+    height:100px;
+
+
+    margin:0 auto 25px;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:55px;
+
+
+    color:#d4af37;
+
+
+    border:
+
+    1px solid rgba(212,175,55,.4);
+
+
+    text-shadow:
+
+    0 0 35px #d4af37;
+
+
+}
+
+
+
+
+
+.product-card h3 {
+
+
+    color:#ffe9a8;
+
+
+    font-size:30px;
+
+
+}
+
+
+
+
+
+.product-card p {
+
+
+    color:#bbb;
+
+
+    line-height:1.8;
+
+
+    margin-bottom:30px;
+
+
+}
