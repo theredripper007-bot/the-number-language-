@@ -542,3 +542,158 @@ height:50%;
 
 
 }
+/* =====================================
+   PHILOSOPHY WORLD
+===================================== */
+
+
+.world-hero {
+
+
+    min-height:80vh;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    text-align:center;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+.world-hero .hero-content {
+
+
+    z-index:5;
+
+
+}
+
+
+
+
+
+.world-hero h1 {
+
+
+    font-size:80px;
+
+
+    letter-spacing:8px;
+
+
+}
+
+
+
+
+
+.philosophy-section {
+
+
+    max-width:900px;
+
+
+    margin:120px auto;
+
+
+    text-align:center;
+
+
+    padding:40px;
+
+
+}
+
+
+
+
+
+.philosophy-section h2 {
+
+
+    font-size:45px;
+
+
+    color:#d4af37;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+
+.philosophy-section p {
+
+
+    color:#ccc;
+
+
+    font-size:20px;
+
+
+    line-height:2;
+
+
+}
+
+
+
+
+
+.quote-section {
+
+
+    min-height:400px;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.quote-section h2 {
+
+
+    font-size:55px;
+
+
+    color:#ffe9a8;
+
+
+    font-style:italic;
+
+
+}
