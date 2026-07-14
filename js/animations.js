@@ -1,20 +1,20 @@
 /* =====================================
    THE NUMBER LANGUAGE
-   Animation Controller
+   Interactive Number Archive
 ===================================== */
 
 
 document.addEventListener(
 
-    "DOMContentLoaded",
+"DOMContentLoaded",
 
-    () => {
-
-
-        revealElements();
+()=>{
 
 
-    }
+initializeNumberArchive();
+
+
+}
 
 );
 
@@ -23,72 +23,240 @@ document.addEventListener(
 
 
 
-function revealElements(){
 
-
-    const elements =
-
-    document.querySelectorAll(
-
-        "section, .number-card"
-
-    );
+function initializeNumberArchive(){
 
 
 
-    const observer =
+const cards = document.querySelectorAll(
 
-    new IntersectionObserver(
+".number-card"
 
-        entries => {
-
-
-            entries.forEach(entry => {
+);
 
 
 
-                if(entry.isIntersecting){
+const modal = document.querySelector(
+
+".number-modal"
+
+);
 
 
 
-                    entry.target.classList.add(
+const close = document.querySelector(
 
-                        "visible"
+".modal-close"
 
-                    );
-
-
-
-                }
+);
 
 
 
-            });
+const symbol = document.querySelector(
+
+".modal-symbol"
+
+);
 
 
 
-        },
+const number = document.querySelector(
 
+".modal-number"
 
-        {
-
-            threshold:0.15
-
-        }
-
-
-    );
+);
 
 
 
+const title = document.querySelector(
 
-    elements.forEach(element => {
+".modal-title"
+
+);
 
 
-        observer.observe(element);
+
+const description = document.querySelector(
+
+".modal-description"
+
+);
 
 
-    });
+
+
+
+
+
+const data = {
+
+
+0:{
+symbol:"∅",
+title:"The Void",
+text:"Infinite possibility before creation."
+},
+
+
+1:{
+symbol:"✦",
+title:"The Origin",
+text:"The first expression of existence."
+},
+
+
+2:{
+symbol:"☯",
+title:"Duality",
+text:"The balance between opposing forces."
+},
+
+
+3:{
+symbol:"△",
+title:"Creation",
+text:"The energy of growth and expression."
+},
+
+
+4:{
+symbol:"□",
+title:"Foundation",
+text:"Structure, order and stability."
+},
+
+
+5:{
+symbol:"⌀",
+title:"Transformation",
+text:"Movement, change and evolution."
+},
+
+
+6:{
+symbol:"✧",
+title:"Harmony",
+text:"Balance between energies."
+},
+
+
+7:{
+symbol:"◇",
+title:"Mystery",
+text:"The hidden dimensions of reality."
+},
+
+
+8:{
+symbol:"∞",
+title:"Infinity",
+text:"Cycles beyond beginning and end."
+},
+
+
+9:{
+symbol:"⊙",
+title:"Completion",
+text:"The return to unity."
+}
+
+
+};
+
+
+
+
+
+
+
+
+cards.forEach(card=>{
+
+
+card.addEventListener(
+
+"click",
+
+()=>{
+
+
+const id = card.dataset.number;
+
+
+symbol.textContent =
+data[id].symbol;
+
+
+number.textContent =
+id;
+
+
+title.textContent =
+data[id].title;
+
+
+description.textContent =
+data[id].text;
+
+
+
+modal.style.display="flex";
+
+
+
+}
+
+);
+
+
+
+});
+
+
+
+
+
+
+
+
+close.addEventListener(
+
+"click",
+
+()=>{
+
+
+modal.style.display="none";
+
+
+}
+
+);
+
+
+
+
+
+modal.addEventListener(
+
+"click",
+
+(e)=>{
+
+
+if(e.target===modal){
+
+
+modal.style.display="none";
+
+
+}
+
+
+}
+
+
+);
 
 
 
