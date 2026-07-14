@@ -367,3 +367,117 @@ footer {
     color:#888;
 
 }
+/* =====================================
+   COSMIC HERO SYSTEM
+===================================== */
+
+
+.hero {
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+
+
+
+.cosmic-background {
+
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:
+
+    radial-gradient(
+        circle at center,
+        rgba(212,175,55,.15),
+        transparent 40%
+    ),
+
+    radial-gradient(
+        circle at 30% 20%,
+        rgba(80,50,150,.25),
+        transparent 35%
+    ),
+
+    linear-gradient(
+        180deg,
+        #050505,
+        #000
+    );
+
+
+    z-index:0;
+
+
+}
+
+
+
+
+
+.hero-content {
+
+
+    position:relative;
+
+    z-index:5;
+
+
+}
+
+
+
+
+
+.sacred-circle {
+
+
+    z-index:2;
+
+
+    opacity:.7;
+
+
+}
+
+
+
+
+
+.particles {
+
+
+    position:absolute;
+
+    inset:0;
+
+
+    z-index:3;
+
+
+    pointer-events:none;
+
+
+}
+
+
+
+
+
+.hero h1,
+.hero p,
+.hero button {
+
+
+    position:relative;
+
+    z-index:6;
+
+
+}
