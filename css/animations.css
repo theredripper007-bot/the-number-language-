@@ -1,1 +1,314 @@
+/* =====================================
+   THE NUMBER LANGUAGE
+   Cosmic Animation System
+===================================== */
 
+
+/* Loader Animation */
+
+
+.loader-symbol {
+
+    animation:
+
+    pulseGlow 3s infinite;
+
+}
+
+
+
+@keyframes pulseGlow {
+
+
+    0% {
+
+        transform:scale(1);
+
+        opacity:.7;
+
+    }
+
+
+    50% {
+
+        transform:scale(1.15);
+
+        opacity:1;
+
+    }
+
+
+    100% {
+
+        transform:scale(1);
+
+        opacity:.7;
+
+    }
+
+}
+
+
+
+
+
+/* Sacred Geometry Rotation */
+
+
+.sacred-circle {
+
+
+    animation:
+
+    rotateUniverse 40s linear infinite;
+
+
+}
+
+
+
+@keyframes rotateUniverse {
+
+
+    from {
+
+        transform:
+
+        rotate(0deg);
+
+    }
+
+
+    to {
+
+        transform:
+
+        rotate(360deg);
+
+    }
+
+}
+
+
+
+
+
+
+
+/* Hero Entrance */
+
+
+.hero-content {
+
+
+    animation:
+
+    fadeUp 2s ease forwards;
+
+
+}
+
+
+
+@keyframes fadeUp {
+
+
+    from {
+
+
+        opacity:0;
+
+
+        transform:
+
+        translateY(50px);
+
+
+    }
+
+
+    to {
+
+
+        opacity:1;
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* Number Card Floating */
+
+
+.number-card {
+
+
+    animation:
+
+    floating 6s ease-in-out infinite;
+
+
+}
+
+
+
+
+.number-card:nth-child(2) {
+
+    animation-delay:1s;
+
+}
+
+
+.number-card:nth-child(3) {
+
+    animation-delay:2s;
+
+}
+
+
+.number-card:nth-child(4) {
+
+    animation-delay:3s;
+
+}
+
+
+
+
+
+@keyframes floating {
+
+
+    0% {
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+    50% {
+
+
+        transform:
+
+        translateY(-15px);
+
+
+    }
+
+
+    100% {
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+}
+
+
+
+
+
+
+
+/* Hover Energy */
+
+
+.number-card:hover {
+
+
+    transform:
+
+    translateY(-15px)
+
+    scale(1.03);
+
+
+    transition:
+
+    .5s;
+
+
+}
+
+
+
+
+
+
+
+/* Button Energy */
+
+
+.primary-btn {
+
+
+    animation:
+
+    buttonGlow 4s infinite;
+
+
+}
+
+
+
+@keyframes buttonGlow {
+
+
+    0% {
+
+
+        box-shadow:
+
+        0 0 0 transparent;
+
+
+    }
+
+
+    50% {
+
+
+        box-shadow:
+
+        0 0 30px
+
+        rgba(212,175,55,.4);
+
+
+    }
+
+
+    100% {
+
+
+        box-shadow:
+
+        0 0 0 transparent;
+
+
+    }
+
+
+}
