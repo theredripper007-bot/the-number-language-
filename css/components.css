@@ -1,1 +1,290 @@
+/* =====================================
+   THE NUMBER LANGUAGE
+   Premium Website Components
+===================================== */
 
+
+/* Main Container */
+
+.container {
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+/* Section Subtitle */
+
+.section-subtitle {
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:20px auto 60px;
+
+    color:#bdbdbd;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+/* Premium Button */
+
+.primary-btn {
+
+
+    display:inline-block;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    border:1px solid #d4af37;
+
+    font-size:16px;
+
+    letter-spacing:2px;
+
+    transition:.5s;
+
+}
+
+
+
+
+
+.primary-btn:hover {
+
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+/* Glass Card System */
+
+
+.glass-card {
+
+
+    background:
+
+    rgba(255,255,255,0.05);
+
+
+    backdrop-filter:
+
+    blur(20px);
+
+
+    border:
+
+    1px solid
+
+    rgba(212,175,55,.25);
+
+
+    border-radius:25px;
+
+
+    padding:40px;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+
+.glass-card:hover {
+
+
+    transform:
+
+    translateY(-10px);
+
+
+}
+
+
+
+
+
+/* Number Cards Upgrade */
+
+
+.number-card {
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+.number-card::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    background:
+
+    radial-gradient(
+
+    circle,
+
+    rgba(212,175,55,.15),
+
+    transparent 60%
+
+    );
+
+
+    opacity:0;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+.number-card:hover::before {
+
+
+    opacity:1;
+
+
+}
+
+
+
+
+
+/* Gallery Cards */
+
+
+.gallery-box {
+
+
+    min-height:300px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    border-radius:30px;
+
+
+    border:
+
+    1px solid
+
+    rgba(212,175,55,.3);
+
+
+    background:
+
+    rgba(255,255,255,.03);
+
+
+    color:#d4af37;
+
+
+    font-size:24px;
+
+
+}
+
+
+
+
+
+/* Product Preview Cards */
+
+
+.product-card {
+
+
+    padding:35px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    rgba(255,255,255,.04);
+
+
+    border:
+
+    1px solid
+
+    rgba(212,175,55,.25);
+
+
+}
+
+
+
+
+
+/* Divider */
+
+
+.cosmic-divider {
+
+
+    width:150px;
+
+
+    height:1px;
+
+
+    margin:40px auto;
+
+
+    background:#d4af37;
+
+
+    box-shadow:
+
+    0 0 20px #d4af37;
+
+
+}
