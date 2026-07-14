@@ -1,1 +1,204 @@
+/* =====================================
+   THE NUMBER LANGUAGE
+   Cosmic Theme System
+===================================== */
 
+
+:root {
+
+    --void-black: #030303;
+
+    --cosmic-dark: #080808;
+
+    --gold-primary: #d4af37;
+
+    --gold-light: #ffe9a8;
+
+    --gold-glow:
+    rgba(212,175,55,0.5);
+
+    --text-light: #f5f5f5;
+
+    --text-muted: #b8b8b8;
+
+    --glass:
+    rgba(255,255,255,0.06);
+
+}
+
+
+
+
+
+body {
+
+    background:
+
+    radial-gradient(
+        circle at top,
+        #171000,
+        var(--void-black)
+    );
+
+}
+
+
+
+
+
+/* Golden Glow System */
+
+
+.hero h1 span,
+.number-card h3,
+.geometry-placeholder {
+
+    text-shadow:
+
+    0 0 10px var(--gold-glow),
+
+    0 0 30px var(--gold-glow);
+
+}
+
+
+
+
+
+/* Glass Panels */
+
+
+.number-card,
+.gallery-box {
+
+    backdrop-filter:
+
+    blur(20px);
+
+    background:
+
+    linear-gradient(
+
+    145deg,
+
+    rgba(255,255,255,0.08),
+
+    rgba(255,255,255,0.02)
+
+    );
+
+}
+
+
+
+
+
+/* Sacred Border */
+
+
+.number-card:hover {
+
+    border-color:
+
+    var(--gold-primary);
+
+
+    box-shadow:
+
+    0 0 30px
+
+    rgba(212,175,55,.25);
+
+}
+
+
+
+
+
+/* Premium Button */
+
+
+.primary-btn {
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.primary-btn:hover {
+
+
+    background:
+
+    var(--gold-primary);
+
+
+    color:black;
+
+
+    box-shadow:
+
+    0 0 40px
+
+    var(--gold-glow);
+
+}
+
+
+
+
+
+/* Section Titles */
+
+
+section h2 {
+
+
+    text-align:center;
+
+    font-size:50px;
+
+    letter-spacing:5px;
+
+    color:var(--gold-light);
+
+
+}
+
+
+
+
+
+/* Ancient Energy Circle */
+
+
+.sacred-circle {
+
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+
+    border:
+
+    1px solid
+
+    rgba(212,175,55,.3);
+
+
+    box-shadow:
+
+    0 0 80px
+
+    rgba(212,175,55,.2);
+
+
+}
