@@ -1312,3 +1312,157 @@ height:50%;
 
 
 }
+/* =====================================
+   CONTACT PORTAL
+===================================== */
+
+
+.contact-section {
+
+
+    max-width:800px;
+
+
+    margin:120px auto;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.contact-section h2 {
+
+
+    font-size:50px;
+
+
+    color:#d4af37;
+
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+.contact-form {
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:25px;
+
+
+    padding:50px;
+
+
+    border-radius:30px;
+
+
+    border:
+
+    1px solid rgba(212,175,55,.3);
+
+
+    background:
+
+    rgba(255,255,255,.05);
+
+
+    backdrop-filter:blur(20px);
+
+
+}
+
+
+
+
+
+
+.contact-form input,
+
+
+.contact-form textarea {
+
+
+    width:100%;
+
+
+    padding:20px;
+
+
+    border-radius:15px;
+
+
+    border:
+
+    1px solid rgba(212,175,55,.3);
+
+
+    background:
+
+    rgba(0,0,0,.3);
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+
+.contact-form textarea {
+
+
+    min-height:180px;
+
+
+    resize:none;
+
+
+}
+
+
+
+
+
+.contact-form input:focus,
+
+
+.contact-form textarea:focus {
+
+
+    outline:none;
+
+
+    border-color:#d4af37;
+
+
+}
+
+
+
+
+
+.contact-form .primary-btn {
+
+
+    align-self:center;
+
+
+}
