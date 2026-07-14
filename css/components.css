@@ -1220,3 +1220,95 @@ height:50%;
 
 
 }
+/* =====================================
+   ABOUT WORLD
+===================================== */
+
+
+.about-section {
+
+
+    max-width:900px;
+
+
+    margin:120px auto;
+
+
+    padding:50px;
+
+
+    text-align:center;
+
+
+    position:relative;
+
+
+}
+
+
+
+
+
+.about-section::before {
+
+
+    content:"✦";
+
+
+    position:absolute;
+
+
+    top:-50px;
+
+
+    left:50%;
+
+
+    transform:translateX(-50%);
+
+
+    font-size:80px;
+
+
+    color:rgba(212,175,55,.15);
+
+
+}
+
+
+
+
+
+
+.about-section h2 {
+
+
+    font-size:45px;
+
+
+    color:#d4af37;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+
+
+.about-section p {
+
+
+    font-size:20px;
+
+
+    line-height:2;
+
+
+    color:#ccc;
+
+
+}
