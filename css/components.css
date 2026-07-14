@@ -903,3 +903,145 @@ height:50%;
 
 
 }
+/* =====================================
+   GALLERY ART MUSEUM CARDS
+===================================== */
+
+
+.art-card {
+
+
+    padding:30px;
+
+
+    border-radius:30px;
+
+
+    border:
+
+    1px solid rgba(212,175,55,.3);
+
+
+
+    background:
+
+    rgba(255,255,255,.05);
+
+
+
+    backdrop-filter:blur(20px);
+
+
+    text-align:center;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+.art-card:hover {
+
+
+    transform:
+
+    translateY(-15px);
+
+
+
+    border-color:#d4af37;
+
+
+}
+
+
+
+
+
+.art-image {
+
+
+    height:250px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    border-radius:25px;
+
+
+
+    font-size:100px;
+
+
+
+    color:#d4af37;
+
+
+
+    background:
+
+    radial-gradient(
+
+    circle,
+
+    rgba(212,175,55,.2),
+
+    transparent
+
+    );
+
+
+
+    margin-bottom:25px;
+
+
+
+    text-shadow:
+
+    0 0 40px #d4af37;
+
+
+
+}
+
+
+
+
+
+.art-card h3 {
+
+
+    color:#ffe9a8;
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+
+.art-card p {
+
+
+    color:#bbb;
+
+
+    line-height:1.8;
+
+
+    margin-bottom:25px;
+
+
+}
