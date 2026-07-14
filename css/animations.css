@@ -629,3 +629,94 @@
     }
 
 }
+/* =====================================
+   COSMIC PARTICLES
+===================================== */
+
+
+.cosmic-particle {
+
+
+    position:absolute;
+
+
+    width:3px;
+
+
+    height:3px;
+
+
+    background:#d4af37;
+
+
+    border-radius:50%;
+
+
+    opacity:.6;
+
+
+    animation:
+
+    floatParticle infinite ease-in-out;
+
+
+}
+
+
+
+
+
+@keyframes floatParticle {
+
+
+0% {
+
+
+    transform:
+
+    translateY(0)
+
+    scale(1);
+
+
+    opacity:.2;
+
+
+}
+
+
+
+50% {
+
+
+    transform:
+
+    translateY(-80px)
+
+    scale(1.8);
+
+
+    opacity:1;
+
+
+}
+
+
+
+100% {
+
+
+    transform:
+
+    translateY(0)
+
+    scale(1);
+
+
+    opacity:.2;
+
+
+}
+
+
+}
