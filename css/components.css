@@ -1547,5 +1547,9 @@ opacity:1;
 
 transform:
 translateY(0);
-
+.number-link{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+}
 }
