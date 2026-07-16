@@ -119,6 +119,222 @@ The Number Language will grow into a digital universe containing:
 • Mobile Experience
 
 ---
+---
 
+# THE NINE GATEWAYS
+
+## ① THE ORIGIN
+
+Planet: ☀ Sun
+
+Element: Fire
+
+Color: Gold
+
+Geometry: Point
+
+Keywords:
+
+Beginning
+
+Leadership
+
+Light
+
+Purpose
+
+Creation
+
+---
+
+## ② THE MIRROR
+
+Planet: 🌙 Moon
+
+Element: Water
+
+Color: Silver
+
+Geometry: Line
+
+Keywords:
+
+Reflection
+
+Balance
+
+Emotion
+
+Duality
+
+Harmony
+
+---
+
+## ③ THE CREATOR
+
+Planet: ♃ Jupiter
+
+Element: Ether
+
+Color: Yellow
+
+Geometry: Triangle
+
+Keywords:
+
+Knowledge
+
+Creation
+
+Growth
+
+Wisdom
+
+Expansion
+
+---
+
+## ④ THE FOUNDATION
+
+Planet: ☊ Rahu
+
+Element: Earth
+
+Color: Indigo
+
+Geometry: Square
+
+Keywords:
+
+Structure
+
+Innovation
+
+Stability
+
+Discipline
+
+Transformation
+
+---
+
+## ⑤ THE TRAVELER
+
+Planet: ☿ Mercury
+
+Element: Air
+
+Color: Green
+
+Geometry: Pentagon
+
+Keywords:
+
+Movement
+
+Communication
+
+Learning
+
+Adventure
+
+Freedom
+
+---
+
+## ⑥ THE GUARDIAN
+
+Planet: ♀ Venus
+
+Element: Earth
+
+Color: Emerald
+
+Geometry: Hexagon
+
+Keywords:
+
+Love
+
+Beauty
+
+Harmony
+
+Responsibility
+
+Compassion
+
+---
+
+## ⑦ THE SEEKER
+
+Planet: ☋ Ketu
+
+Element: Space
+
+Color: Violet
+
+Geometry: Heptagon
+
+Keywords:
+
+Meditation
+
+Silence
+
+Truth
+
+Mystery
+
+Awakening
+
+---
+
+## ⑧ THE INFINITE
+
+Planet: ♄ Saturn
+
+Element: Time
+
+Color: Deep Blue
+
+Geometry: Octagon
+
+Keywords:
+
+Infinity
+
+Cycles
+
+Discipline
+
+Karma
+
+Patience
+
+---
+
+## ⑨ THE COMPLETION
+
+Planet: ♂ Mars
+
+Element: Fire
+
+Color: Crimson
+
+Geometry: Enneagon
+
+Keywords:
+
+Completion
+
+Courage
+
+Transformation
+
+Service
+
+Wisdom
 "Everything begins with one.
 Everything returns through nine."
